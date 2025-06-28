@@ -49,7 +49,11 @@ The Server-Sentinel-C system is designed as a modular, state-driven application 
 ### Key Structures
 - `SensorReading`: Contains temperature and humidity values
 - `LogEntry`: Contains a sensor reading and a timestamp
-- `SmartDataGenerator`: Maintains the state of the data simulator
+- `SmartDataGenerator`: Make smart data generation stateful, including current temperature, humidity, and drift values
+- `LogBuffer`: Circular buffer of LogEntries
+- `UserCommand`: Represents user commands to change system state or data generation
+- `SystemStatus`: Contains current system state, last reading, and log buffer
+- `Controller`: Main controller that initializes and manages the system
 
 ## Module Interactions
 - Main Controller initializes all modules and manages the program flow
@@ -57,3 +61,59 @@ The Server-Sentinel-C system is designed as a modular, state-driven application 
 - System Logic determines the system state based on readings
 - Logger records all readings regardless of system state
 - User Interface processes commands that influence the Smart Data module
+
+## System Architecture Diagram
+
+```mermaid
+classDiagram
+    class MainController {
+        -SystemStatus status
+        +initialize()
+        +runMainLoop()
+        +shutdown()
+    }
+    
+    class SystemLogic {
+        +checkThresholds(SensorReading)
+        +determineState(SensorReading)
+        +trackCriticalTime()
+        +shouldShutdown()
+    }
+    
+    class SmartData {
+        -SmartDataGenerator generator
+        +initialize()
+        +setScenario(UserCommand)
+        +generateReading()
+    }
+    
+    class Logger {
+        -LogBuffer buffer[120]
+        +logReading(SensorReading)
+        +getLogEntries()
+        +getLatestEntries(int count)
+    }
+    
+    class UserInterface {
+        +displayStatus(SystemStatus)
+        +displayAlert(SystemState)
+        +getUserCommand()
+        +displayLog(LogEntry[])
+    }
+    
+    MainController --> SystemLogic : uses
+    MainController --> SmartData : requests readings
+    MainController --> Logger : logs data
+    MainController --> UserInterface : displays output
+    
+    SmartData ..> MainController : SensorReading
+    UserInterface ..> MainController : UserCommand
+    SystemLogic ..> MainController : SystemState
+    Logger ..> UserInterface : LogEntries
+    
+    note for MainController "Core coordinator\nControls program flow"
+    note for SmartData "Simulates sensor data\nResponds to scenarios"
+    note for SystemLogic "Determines system state\nTracks critical conditions"
+    note for Logger "Maintains circular buffer\nStores historical data"
+    note for UserInterface "Handles user input/output\nDisplays alerts"
+```
