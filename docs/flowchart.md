@@ -31,3 +31,91 @@ graph TD
     O1 --> C1
     P1 --> C1
 ```
+---
+
+## Smart Data Module Flow
+
+The following flowchart shows how the Smart Data module processes commands and generates sensor readings:
+
+```mermaid
+graph TD
+    A2[Get Command] --> B2{Command Type?}
+    B2 -- fail_cooling --> C2[Set State to HEATING_UP]
+    B2 -- fix --> D2[Set State to COOLING_DOWN]
+    B2 -- humidity_spike --> E2[Set State to HUMIDITY_SPIKE]
+    B2 -- intermittent --> F2[Set State to INTERMITTENT_FAILURE]
+    
+    C2 --> G2[Positive Temp Drift<br>Negative Humidity Drift]
+    D2 --> H2[Negative Temp Drift<br>Positive Humidity Drift]
+    E2 --> I2[Zero Temp Drift<br>Positive Humidity Drift]
+    F2 --> J2[Alternating Drift Patterns]
+    
+    G2 --> K2[Generate Reading]
+    H2 --> K2
+    I2 --> K2
+    J2 --> K2
+    
+    K2 --> L2[Return Sensor Reading]
+```
+---
+
+## Logger Module Flow
+
+The following flowchart illustrates the circular buffer mechanism of the Logger module:
+
+```mermaid
+graph TD
+    A3[Receive New Reading] --> B3{Is Log Full?}
+    B3 -- Yes --> C3[Overwrite Oldest Entry]
+    B3 -- No --> D3[Add to Next Position]
+    
+    C3 --> E3[Update Log Pointers]
+    D3 --> E3
+    
+    E3 --> F3[Return]
+```
+
+---
+
+## System Logic Module Flow
+
+The following flowchart illustrates how the System Logic module processes sensor readings and manages the system state:
+
+```mermaid
+graph TD
+    A4[Receive Sensor Reading] --> B4{Check Temperature}
+    B4 -- > 60°C --> C4[Temp State = DANGER]
+    B4 -- > 45°C --> D4[Temp State = CAUTION]
+    B4 -- <= 45°C --> E4[Temp State = NORMAL]
+    
+    A4 --> F4{Check Humidity}
+    F4 -- < 20% or > 80% --> G4[Humidity State = DANGER]
+    F4 -- < 30% or > 70% --> H4[Humidity State = CAUTION]
+    F4 -- 30% to 70% --> I4[Humidity State = NORMAL]
+    
+    C4 --> J4{Determine Overall State}
+    D4 --> J4
+    E4 --> J4
+    G4 --> J4
+    H4 --> J4
+    I4 --> J4
+    
+    J4 --> K4[Set System State to Most Severe]
+    
+    K4 --> L4{Is State DANGER<br>due to Temperature?}
+    L4 -- Yes --> M4[Increment Critical Timer]
+    L4 -- No --> N4[Reset Critical Timer]
+    
+    M4 --> O4{Timer > 20s?}
+    O4 -- Yes --> P4[State = SHUTDOWN]
+    O4 -- No --> Q4[Keep State = DANGER]
+    
+    N4 --> R4[Return Current State]
+    P4 --> R4
+    Q4 --> R4
+```
+---
+
+<p align="center">
+    <img src="https://img.shields.io/badge/Diagram-Mermaid-blue?logo=mermaid" alt="Mermaid Diagram Badge">
+</p>
