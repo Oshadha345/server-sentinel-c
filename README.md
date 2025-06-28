@@ -156,15 +156,15 @@ Our implementation expands on the basic requirements with a comprehensive approa
 
 ### Phase Completion Visual
     
-    ```mermaid
-    pie title Project Phase Completion
-            "Phase 1" : 33
-            "Phase 2" : 0
-            "Phase 3" : 0
-            "Phase 4" : 0
-            "Phase 5" : 0
-            "Remaining" : 67
-    ```
+```mermaid
+pie title Project Phase Completion
+        "Phase 1" : 33
+        "Phase 2" : 0
+        "Phase 3" : 0
+        "Phase 4" : 0
+        "Phase 5" : 0
+        "Remaining" : 67
+```
 ---
 
 ## 🚀 Getting Started
