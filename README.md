@@ -1,18 +1,18 @@
 # Server-Sentinel-C 🖥️🌡️
 
 <p align="center">
-    <img src="https://via.placeholder.com/800x200?text=Server+Sentinel+C" alt="Server Sentinel C Banner">
+    <img src="https://raw.githubusercontent.com/Oshadha345/server-sentinel-c/main/docs/assets/server-sentinel-c-banner.png" alt="Server Sentinel C Banner">
 </p>
 
-[![Status](https://img.shields.io/badge/Status-In%20Development-yellow)](https://github.com/yourusername/server-sentinel-c)
-[![Phase](https://img.shields.io/badge/Phase-1%3A%20Architecture-blue)](https://github.com/yourusername/server-sentinel-c)
+[![Status](https://img.shields.io/badge/Status-In%20Development-yellow)](https://github.com/Oshadha345/server-sentinel-c)
+[![Phase](https://img.shields.io/badge/Phase-1%3A%20Architecture-blue)](https://github.com/Oshadha345/server-sentinel-c)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 [![C Language](https://img.shields.io/badge/Language-C-orange)](https://en.cppreference.com/w/c)
-[![CO253](https://img.shields.io/badge/Course-CO253-red)](https://github.com/yourusername/server-sentinel-c)
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/server-sentinel-c?color=blue&label=Repo%20Size)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/server-sentinel-c?color=purple)
-![GitHub stars](https://img.shields.io/github/stars/yourusername/server-sentinel-c?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/server-sentinel-c?style=social)
+[![CO253](https://img.shields.io/badge/Course-CO253-red)](https://github.com/Oshadha345/server-sentinel-c)
+![GitHub repo size](https://img.shields.io/github/repo-size/Oshadha345/server-sentinel-c?color=blue&label=Repo%20Size)
+![GitHub last commit](https://img.shields.io/github/last-commit/Oshadha345/server-sentinel-c?color=purple)
+![GitHub stars](https://img.shields.io/github/stars/Oshadha345/server-sentinel-c?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Oshadha345/server-sentinel-c?style=social)
 
 > A C-based simulation of a mission-critical environmental controller for data centers, featuring a state-driven design, escalating alerts, and an emergency shutdown protocol based on ASHRAE standards.
 
@@ -134,9 +134,9 @@ Our implementation expands on the basic requirements with a comprehensive approa
 ![Issues](https://img.shields.io/badge/Open%20Issues-4-red)
 ![PRs](https://img.shields.io/badge/Pull%20Requests-2-green)
 ![Contributors](https://img.shields.io/badge/Contributors-6-orange)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/server-sentinel-c?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/server-sentinel-c?color=red)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/server-sentinel-c?color=green)
+![GitHub watchers](https://img.shields.io/github/watchers/Oshadha345/server-sentinel-c?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Oshadha345/server-sentinel-c?color=red)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Oshadha345/server-sentinel-c?color=green)
 
 <details>
     <summary>📈 Detailed Stats</summary>
@@ -182,7 +182,7 @@ Our implementation expands on the basic requirements with a comprehensive approa
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/server-sentinel-c.git
+git clone https://github.com/Oshadha345/server-sentinel-c.git
 
 # Navigate to project directory
 cd server-sentinel-c
