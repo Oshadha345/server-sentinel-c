@@ -17,8 +17,8 @@ graph TD
     G1 --> H1{Check Reading<br>Against Thresholds}
     
     subgraph StateLogic
-        H1 -- "Temp > 60C OR<br>Hum >80%/<20%" --> I1[State = DANGER]
-        H1 -- "Temp > 45C OR<br>Hum >70%/<30%" --> J1[State = CAUTION]
+        H1 -- "Temp > 60C OR<br> Hum >80% / <20% " --> I1[State = DANGER]
+        H1 -- "Temp > 45C OR<br> Hum >70% / <30% " --> J1[State = CAUTION]
         H1 -- Otherwise --> K1[State = NORMAL]
     end
 
@@ -88,14 +88,14 @@ graph TD
 ```mermaid
 graph TD
     A4[Receive Sensor Reading] --> B4{Check Temperature}
-    B4 -- "> 60°C" --> C4[Temp State = DANGER]
-    B4 -- "> 45°C" --> D4[Temp State = CAUTION]
-    B4 -- "<= 45°C" --> E4[Temp State = NORMAL]
-    
+    B4 -- " > 60°C " --> C4[Temp State = DANGER]
+    B4 -- " > 45°C " --> D4[Temp State = CAUTION]
+    B4 -- " <= 45°C " --> E4[Temp State = NORMAL]
+
     A4 --> F4{Check Humidity}
-    F4 -- "< 20% or > 80%" --> G4[Humidity State = DANGER]
-    F4 -- "< 30% or > 70%" --> H4[Humidity State = CAUTION]
-    F4 -- "30% to 70%" --> I4[Humidity State = NORMAL]
+    F4 -- " < 20% or > 80% " --> G4[Humidity State = DANGER]
+    F4 -- " < 30% or > 70% " --> H4[Humidity State = CAUTION]
+    F4 -- " 30% to 70% " --> I4[Humidity State = NORMAL]
     
     C4 --> J4{Determine<br>Overall State}
     D4 --> J4
