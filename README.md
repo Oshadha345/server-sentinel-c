@@ -140,6 +140,42 @@ Our implementation expands on the basic requirements with a comprehensive approa
 
 ---
 
+## 📊 Project Stats
+
+![Commits](https://img.shields.io/badge/Commits-27-blue)
+![Completion](https://img.shields.io/badge/Completion-8%25-yellow)
+![Issues](https://img.shields.io/badge/Open%20Issues-4-red)
+![PRs](https://img.shields.io/badge/Pull%20Requests-2-green)
+![Contributors](https://img.shields.io/badge/Contributors-6-orange)
+
+<details>
+  <summary>📈 Detailed Stats</summary>
+  
+  | Metric | Value | Progress |
+  |--------|-------|----------|
+  | Lines of Code | ~2,500 (projected) | - |
+  | Documentation Pages | 7 | - |
+  | Phase 1 Tasks | 2/6 completed (33%) | █████░░░░░░░░░ 33% |
+  | Phase 2 Tasks | 0/6 completed (0%) | ░░░░░░░░░░░░░░ 0% |
+  | Phase 3 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
+  | Phase 4 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
+  | Phase 5 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
+  | Total Tasks | 2/24 completed | █░░░░░░░░░░░░░░ 8% |
+  
+  ### Phase Completion Visual
+  
+  ```mermaid
+  pie title Project Phase Completion
+      "Phase 1" : 33
+      "Phase 2" : 0
+      "Phase 3" : 0
+      "Phase 4" : 0
+      "Phase 5" : 0
+      "Remaining" : 67
+    </details> ```
+
+---
+
 ## 🚀 Getting Started
 
 > ⚠️ **Note:** This project is currently in Phase 1 (Architecture & Design). Build instructions will be added in Phase 2.
