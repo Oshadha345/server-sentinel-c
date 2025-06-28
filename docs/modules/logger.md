@@ -1,23 +1,23 @@
-# Logger Module
+# 📝 Logger Module
 
-## Purpose
-The Logger module is responsible for recording and storing sensor readings in a circular buffer. It maintains a historical record of environmental conditions and provides access to this data for analysis and display.
+## 🎯 Purpose
+> The Logger module is responsible for recording and storing sensor readings in a circular buffer. It maintains a historical record of environmental conditions and provides access to this data for analysis and display.
 
-## Responsibilities
+## 🛠️ Responsibilities
 
-### Data Recording
-- Record each sensor reading with a timestamp
-- Maintain a fixed-size circular buffer (120 entries)
-- Manage the oldest/newest entry pointers
+### **💾 Data Recording**
+- ✅ Record each sensor reading with a timestamp.
+- ✅ Maintain a fixed-size circular buffer (120 entries).
+- ✅ Manage the oldest/newest entry pointers.
 
-### Data Access
-- Provide access to the complete log history
-- Support retrieval of the most recent entries
-- Enable filtering or searching of log entries (optional feature)
+### **🔍 Data Access**
+- ✅ Provide access to the complete log history.
+- ✅ Support retrieval of the most recent entries.
+- ✅ Enable filtering or searching of log entries (optional feature).
 
-## Data Structures
+## 🏗️ Data Structures
 
-### LogEntry
+### `LogEntry`
 ```c
 typedef struct {
     SensorReading reading;    // Temperature and humidity values
@@ -25,7 +25,7 @@ typedef struct {
     SystemState state;        // System state at time of reading
 } LogEntry;
 ```
-### LogBuffer
+### `LogBuffer`
 ```c
 typedef struct {
     LogEntry entries[LOG_SIZE]; // Fixed array of 120 entries
@@ -35,7 +35,7 @@ typedef struct {
 } LogBuffer;
 ```
 
-## Functions
+## 🚀 Functions
 
 ### `initializeLogger()`
 - **Purpose:** Create an empty log buffer.
@@ -72,4 +72,3 @@ typedef struct {
     - Returns up to the specified number of entries.
     - Returns entries from newest to oldest.
     - Returns fewer entries if the buffer contains less than requested.
-
