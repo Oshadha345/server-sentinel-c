@@ -138,33 +138,21 @@ Our implementation expands on the basic requirements with a comprehensive approa
 ![GitHub issues](https://img.shields.io/github/issues/Oshadha345/server-sentinel-c?color=red)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Oshadha345/server-sentinel-c?color=green)
 
-<details>
-    <summary>📈 Detailed Stats</summary>
-    
-    | Metric | Value | Progress |
-    |--------|-------|----------|
-    | Lines of Code | ~2,500 (projected) | - |
-    | Documentation Pages | 7 | - |
-    | Phase 1 Tasks | 2/6 completed (33%) | █████░░░░░░░░░ 33% |
-    | Phase 2 Tasks | 0/6 completed (0%) | ░░░░░░░░░░░░░░ 0% |
-    | Phase 3 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
-    | Phase 4 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
-    | Phase 5 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
-    | Total Tasks | 2/24 completed | █░░░░░░░░░░░░░░ 8% |
-    
-</details>
 
-### Phase Completion Visual
+### 📈 Detailed Stats
+
+| Lines of Code | ~2,500 (projected) | - |
+| Documentation Pages | 7 | - |
     
-```mermaid
-pie title Project Phase Completion
-        "Phase 1" : 33
-        "Phase 2" : 0
-        "Phase 3" : 0
-        "Phase 4" : 0
-        "Phase 5" : 0
-        "Remaining" : 67
-```
+| Metric | Value | Progress |
+|--------|-------|----------|
+| Phase 1 Tasks | 2/6 completed (33%) | █████░░░░░░░░░ 33% |
+| Phase 2 Tasks | 0/6 completed (0%) | ░░░░░░░░░░░░░░ 0% |
+| Phase 3 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |   
+| Phase 4 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
+| Phase 5 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
+| Total Tasks | 2/24 completed | █░░░░░░░░░░░░░░ 8% |
+
 ---
 
 ## 🚀 Getting Started
