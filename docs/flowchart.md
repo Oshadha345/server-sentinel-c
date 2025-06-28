@@ -88,9 +88,9 @@ graph TD
 ```mermaid
 graph TD
     A4[Receive Sensor Reading] --> B4{Check Temperature}
-    B4 -- " > 60°C " --> C4[Temp State = DANGER]
-    B4 -- " > 45°C " --> D4[Temp State = CAUTION]
-    B4 -- " <= 45°C " --> E4[Temp State = NORMAL]
+    B4 -- " 60°C < " --> C4[Temp State = DANGER]
+    B4 -- " 45°C < " --> D4[Temp State = CAUTION]
+    B4 -- " 45°C >= " --> E4[Temp State = NORMAL]
 
     A4 --> F4{Check Humidity}
     F4 -- " < 20% or > 80% " --> G4[Humidity State = DANGER]
