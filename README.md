@@ -152,7 +152,9 @@ Our implementation expands on the basic requirements with a comprehensive approa
     | Phase 5 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
     | Total Tasks | 2/24 completed | █░░░░░░░░░░░░░░ 8% |
     
-    ### Phase Completion Visual
+</details>
+
+### Phase Completion Visual
     
     ```mermaid
     pie title Project Phase Completion
@@ -163,9 +165,6 @@ Our implementation expands on the basic requirements with a comprehensive approa
             "Phase 5" : 0
             "Remaining" : 67
     ```
-    
-</details>
-
 ---
 
 ## 🚀 Getting Started
