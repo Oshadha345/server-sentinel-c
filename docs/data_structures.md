@@ -1,10 +1,13 @@
-# Data Structures
+# 🏗️ Data Structures
 
 This document defines all data structures used in the Server-Sentinel-C system.
 
-## Enumerations
+---
 
-### SystemState
+## 🔢 Enumerations
+
+### 🚦 `SystemState`
+Defines the overall operational state of the system.
 ```c
 typedef enum {
     NORMAL,   // All parameters within safe range
@@ -14,7 +17,8 @@ typedef enum {
 } SystemState;
 ```
 
-### MockDataState
+### 🎭 `MockDataState`
+Represents the different simulation scenarios for generating mock sensor data.
 ```c
 typedef enum {
     STABLE,               // Normal server room conditions
@@ -25,7 +29,8 @@ typedef enum {
 } MockDataState;
 ```
 
-### CommandType
+### ⌨️ `CommandType`
+Enumerates the commands a user can issue to the system.
 ```c
 typedef enum {
     CMD_NONE,          // No command
@@ -39,9 +44,12 @@ typedef enum {
 } CommandType;
 ```
 
-## Structures
+---
 
-### SensorReading
+## 🧱 Structures
+
+### 🌡️ `SensorReading`
+Holds a single reading of temperature and humidity.
 ```c
 typedef struct {
     float temperature;  // Temperature in Celsius
@@ -49,7 +57,8 @@ typedef struct {
 } SensorReading;
 ```
 
-### SmartDataGenerator
+### 🧠 `SmartDataGenerator`
+Manages the state and parameters for generating simulated sensor data.
 ```c
 typedef struct {
     MockDataState state;      // Current simulation state
@@ -61,7 +70,8 @@ typedef struct {
 } SmartDataGenerator;
 ```
 
-### LogEntry
+### 📝 `LogEntry`
+Represents a single entry in the system log.
 ```c
 typedef struct {
     SensorReading reading;    // Temperature and humidity values
@@ -70,7 +80,8 @@ typedef struct {
 } LogEntry;
 ```
 
-### LogBuffer
+### 📚 `LogBuffer`
+A circular buffer to store recent log entries.
 ```c
 typedef struct {
     LogEntry entries[LOG_SIZE]; // Fixed array of 120 entries
@@ -80,7 +91,8 @@ typedef struct {
 } LogBuffer;
 ```
 
-### CriticalTimer
+### ⏱️ `CriticalTimer`
+Tracks the duration the system has been in a critical state.
 ```c
 typedef struct {
     int seconds_at_critical;  // Time spent at critical temperature
@@ -88,7 +100,8 @@ typedef struct {
 } CriticalTimer;
 ```
 
-### UserCommand
+### 🧑‍💻 `UserCommand`
+Stores a command received from the user.
 ```c
 typedef struct {
     CommandType type;        // Type of command
@@ -96,7 +109,8 @@ typedef struct {
 } UserCommand;
 ``` 
 
-### SystemStatus
+### 🖥️ `SystemStatus`
+A snapshot of the system's current status.
 ```c
 typedef struct {
     SystemState state;         // Current system state
@@ -105,7 +119,8 @@ typedef struct {
 } SystemStatus;
 ```
 
-### Controller
+### 🕹️ `Controller`
+The main structure that holds the entire state of the application.
 ```c
 typedef struct {
     SystemStatus status;       // Current system status
@@ -115,8 +130,11 @@ typedef struct {
 } Controller;
 ```
 
-## Constants
+---
 
+## ⚙️ Constants
+
+Defines key configuration values and thresholds for the system.
 ```c
 // Thresholds
 #define TEMP_CAUTION_THRESHOLD 45.0f
@@ -132,4 +150,3 @@ typedef struct {
 // Critical timer
 #define CRITICAL_SHUTDOWN_SECONDS 20
 ```
-
