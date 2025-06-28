@@ -53,7 +53,7 @@ Temperature Logger – Monitors and logs temperature values and provides alerts.
 
 Our implementation expands on the basic requirements with a comprehensive approach:
 
-- **Advanced State Management:** Four distinct operational states(NORMAL,CAUTION,DANGER,SHUTDOWN)🟢🟡🔴💀
+- **Advanced State Management:** Four operational states(NORMAL,CAUTION,DANGER,SHUTDOWN)🟢🟡🔴💀
 - **Dual-Parameter Monitoring:** Tracks both temperature and humidity with distinct thresholds 🌡️💧
 - **Circular Buffer Logging:** Maintains a 120-entry historical log with automatic oldest-entry replacement 🔄📝
 - **Escalating Alert System:** Progressive alerts based on environmental conditions 🚨📈
