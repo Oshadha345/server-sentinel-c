@@ -1,9 +1,3 @@
-
-### 4. Module Documentation (Example: docs/modules/smart_data.md)
-
-Create detailed documentation for each module. Here's an example for the Smart Data module:
-
-```markdown
 # Smart Data Module
 
 ## Purpose
