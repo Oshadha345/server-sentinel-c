@@ -90,9 +90,9 @@ Our implementation expands on the basic requirements with a comprehensive approa
 
 - [x] Define system requirements ✅
 - [x] Establish repository structure 🗂️
-- [ ] Complete system architecture documentation 🏛️
-- [ ] Design system flowcharts 🗺️
-- [ ] Define module interfaces 🔌
+- [x] Complete system architecture documentation 🏛️
+- [x] Design system flowcharts 🗺️
+- [x] Define module interfaces 🔌
 - [ ] Finalize data structures 🏗️
 
 ### *Phase 2: Core Logic Development (The Coding Phase)* 📝
@@ -146,12 +146,12 @@ Our implementation expands on the basic requirements with a comprehensive approa
     
 | Metric | Value | Progress |
 |--------|-------|----------|
-| Phase 1 Tasks | 2/6 completed (33%) | █████░░░░░░░░░ 33% |
+| Phase 1 Tasks | 5/6 completed (83%) | ███████████░░ 83% |
 | Phase 2 Tasks | 0/6 completed (0%) | ░░░░░░░░░░░░░░ 0% |
 | Phase 3 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |   
 | Phase 4 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
 | Phase 5 Tasks | 0/4 completed (0%) | ░░░░░░░░░░░░░░ 0% |
-| Total Tasks | 2/24 completed | █░░░░░░░░░░░░░░ 8% |
+| Total Tasks | 5/24 completed | ███░░░░░░░░░░░░ 21% |
 
 ---
 
@@ -188,11 +188,10 @@ make
 ```mermaid
 stateDiagram-v2
         [*] --> NORMAL
-        NORMAL --> CAUTION: Temp > 45°C OR Humidity < 30% OR > 70%
-        CAUTION --> NORMAL: Temp < 45°C AND 30% < Humidity < 70%
-        CAUTION --> DANGER: Temp > 60°C OR Humidity < 20% OR > 80%
-        DANGER --> CAUTION: Temp < 60°C AND 20% < Humidity < 80%
-        DANGER --> SHUTDOWN: Critical Temp for > 20 seconds
+        NORMAL -- "Temp > 45°C OR Humidity < 30% OR > 70%"--> CAUTION
+        CAUTION -- "Temp > 60°C OR Humidity < 20% OR > 80%"--> DANGER
+        DANGER -- " Temp < 60°C AND 20% < Humidity < 80% " --> CAUTION 
+        DANGER -- "Critical Temp for > 20 seconds" --> SHUTDOWN: 
         SHUTDOWN --> [*]
 ```
 <p align="center">
