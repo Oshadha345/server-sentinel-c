@@ -230,10 +230,10 @@ stateDiagram-v2
 
 | Name | Index | Role | Responsibilities |
 |------|-------|------|------------------|
-| Prasad V.G.A. (Asitha) | E/21/313 | Developer | Smart data simulation module 🤓 |
+| Prasad V.G.A. (Asitha) | E/21/313 | Developer |  |
 | Rathnasiri R.S. (Rumal) | E/21/326 | Developer | User interface and testing 🖥️🧪 |
 | Rathnayaka P.G.I.N.B. (Induka) | E/21/327 | Developer | Logger module and data structures 📝 |
-| Ratnayake R.M.K.T. (Kaweesha) | E/21/334 | Developer | Project documentation and reporting 📚 |
+| Ratnayake R.M.K.T. (Kaweesha) | E/21/334 | Developer | Project documentation and reporting 📚 & Smart data simulation module 🤓 |
 | Samarakoon S.M.O.T. (Oshadha) | E/21/345 | Developer | System architecture, integration, and coordination 🏗️ |
 | Samaranayaka W.W.M.A. (Asanga) | E/21/346 | Developer | System logic implementation 🧠 |
 
