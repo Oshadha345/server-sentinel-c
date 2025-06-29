@@ -187,12 +187,14 @@ make
 
 ```mermaid
 stateDiagram-v2
-        [*] --> NORMAL
-        NORMAL -- "Temp > 45°C OR Humidity < 30% OR > 70%"--> CAUTION
-        CAUTION -- "Temp > 60°C OR Humidity < 20% OR > 80%"--> DANGER
-        DANGER -- " Temp < 60°C AND 20% < Humidity < 80% " --> CAUTION 
-        DANGER -- "Critical Temp for > 20 seconds" --> SHUTDOWN: 
-        SHUTDOWN --> [*]
+    direction LR
+    [*] --> NORMAL
+    NORMAL --> CAUTION: Temp > 45°C OR Humidity < 30% OR > 70%
+    CAUTION --> DANGER: Temp > 60°C OR Humidity < 20% OR > 80%
+    DANGER --> CAUTION: Temp ≤ 60°C AND 20% ≤ Humidity ≤ 80%
+    CAUTION --> NORMAL: Temp ≤ 45°C AND 30% ≤ Humidity ≤ 70%
+    DANGER --> SHUTDOWN: Critical Temp for > 20 seconds
+    SHUTDOWN --> [*]
 ```
 <p align="center">
     <img src="https://img.shields.io/badge/Diagram-Mermaid-blue?logo=mermaid" alt="Mermaid Diagram Badge">
