@@ -187,13 +187,12 @@ make
 
 ```mermaid
 stateDiagram-v2
-    direction LR
     [*] --> NORMAL
-    NORMAL --> CAUTION: Temp > 45°C OR Humidity < 30% OR > 70%
-    CAUTION --> DANGER: Temp > 60°C OR Humidity < 20% OR > 80%
-    DANGER --> CAUTION: Temp ≤ 60°C AND 20% ≤ Humidity ≤ 80%
-    CAUTION --> NORMAL: Temp ≤ 45°C AND 30% ≤ Humidity ≤ 70%
-    DANGER --> SHUTDOWN: Critical Temp for > 20 seconds
+    NORMAL --> CAUTION: Temp > 45°C<br>OR Humidity < 30%<br>OR Humidity > 70%
+    CAUTION --> DANGER: Temp > 60°C<br>OR Humidity < 20%<br>OR Humidity > 80%
+    DANGER --> CAUTION: Temp ≤ 60°C<br>AND 20% ≤ Humidity ≤ 80%
+    CAUTION --> NORMAL: Temp ≤ 45°C<br>AND 30% ≤ Humidity ≤ 70%
+    DANGER --> SHUTDOWN: Critical Temp<br>for > 20 seconds
     SHUTDOWN --> [*]
 ```
 <p align="center">
