@@ -83,8 +83,6 @@ graph TD
 
 ## 💡 System Logic Module Flow
 
-> The following flowchart illustrates how the **System Logic** module processes sensor readings and manages the system state:
-
 ```mermaid
 graph TD
     A4[Receive Sensor Reading] --> B4{Check Temperature}
@@ -110,11 +108,13 @@ graph TD
     L4 -- Yes --> M4[Increment<br>Critical Timer]
     L4 -- No --> N4[Reset<br>Critical Timer]
     
-    M4 --> O4{Timer > 20s?}
+    M4 --> M4a[Store Timer Value<br>in System Status]
+    M4a --> O4{Timer > 20s?}
     O4 -- Yes --> P4[State = SHUTDOWN]
     O4 -- No --> Q4[Keep State = DANGER]
     
-    N4 --> R4[Return Current State]
+    N4 --> N4a[Reset Timer Value<br>in System Status]
+    N4a --> R4[Return Current State]
     P4 --> R4
     Q4 --> R4
 ```
