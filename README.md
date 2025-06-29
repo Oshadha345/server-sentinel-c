@@ -1,7 +1,7 @@
 # Server-Sentinel-C 🖥️🌡️
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Oshadha345/server-sentinel-c/main/docs/assets/server-sentinel-c-banner.png" alt="Server Sentinel C Banner">
+    <img src="media/gifs/Virtual Reality Art GIF by Gogolitus.gif" alt="Server Sentinel C Banner" width="200">
 </p>
 
 [![Status](https://img.shields.io/badge/Status-In%20Development-yellow)](https://github.com/Oshadha345/server-sentinel-c)
@@ -63,12 +63,12 @@ Our implementation expands on the basic requirements with a comprehensive approa
 ### Key Parameters
 
 | Parameter | Condition | Description |
-|-----------|-----------|-------------|
-| Caution Temperature | > 45°C | System enters CAUTION state ⚠️ |
-| Critical Temperature | > 60°C | System enters DANGER state 🔥 |
-| Caution Humidity | > 70% or < 30% | System enters CAUTION state 💧⚠️ |
-| Critical Humidity | > 80% or < 20% | System enters DANGER state 💧🔥 |
-| Shutdown Timer | 20 simulated seconds | Time at Critical Temperature before SHUTDOWN ⏳ |
+|---|---|---|
+| **Caution Temperature** | `> 45°C` | System enters `CAUTION` state ⚠️ |
+| **Critical Temperature** | `> 60°C` | System enters `DANGER` state 🔥 |
+| **Caution Humidity** | `> 70%` or `< 30%` | System enters `CAUTION` state 💧⚠️ |
+| **Critical Humidity** | `> 80%` or `< 20%` | System enters `DANGER` state 💧🔥 |
+| **Shutdown Timer** | `20 simulated seconds` | Time at Critical Temperature before `SHUTDOWN` ⏳ |
 
 ---
  
