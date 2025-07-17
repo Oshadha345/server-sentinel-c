@@ -36,6 +36,12 @@ typedef enum {
     SHUTDOWN // critical temperature sustained for required period
 } SystemState;
 
+// single sensor reading structure
+
+typedef struct {
+    float temperature;
+    float humidity;
+} SensorReading;
 
 
 #endif // COMMON_H
