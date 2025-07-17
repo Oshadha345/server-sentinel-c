@@ -137,16 +137,18 @@ typedef struct {
 Defines key configuration values and thresholds for the system.
 ```c
 // Thresholds
-#define TEMP_CAUTION_THRESHOLD 45.0f
-#define TEMP_DANGER_THRESHOLD  60.0f
-#define HUMID_LOW_CAUTION      30.0f
-#define HUMID_HIGH_CAUTION     70.0f
-#define HUMID_LOW_DANGER       20.0f
-#define HUMID_HIGH_DANGER      80.0f
+#define TEMP_CAUTION_THRESHOLD 45.0C
+#define TEMP_DANGER_THRESHOLD  60.0C
+#define HUMID_LOW_CAUTION      30.0
+#define HUMID_HIGH_CAUTION     70.0
+#define HUMID_LOW_DANGER       20.0
+#define HUMID_HIGH_DANGER      80.0
 
 // Logger configuration
 #define LOG_SIZE 120
 
 // Critical timer
-#define CRITICAL_SHUTDOWN_SECONDS 20
+
+// critical timer is set to 10 min, if the system sustained in danger state for 10min system moves into automatic shutdown
+#define CRITICAL_SHUTDOWN_SECONDS 600 
 ```
