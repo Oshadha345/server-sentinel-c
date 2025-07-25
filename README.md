@@ -398,7 +398,6 @@ stateDiagram-v2
 
 | Name | Index | Role | Responsibilities |
 |------|-------|------|------------------|
-| Prasad V.G.A. (Asitha) | E/21/313 | Developer |  |
 | Rathnasiri R.S. (Rumal) | E/21/326 | Developer | User interface and testing 🖥️🧪 |
 | Rathnayaka P.G.I.N.B. (Induka) | E/21/327 | Developer | Logger module and data structures 📝 |
 | Ratnayake R.M.K.T. (Kaweesha) | E/21/334 | Developer | Project documentation and reporting 📚 & Smart data simulation module 🤓 |
