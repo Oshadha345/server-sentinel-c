@@ -2,7 +2,7 @@ Server-Sentinel-C Server Monitor v1.0
 ==============================================
 
 DESCRIPTION:
-A modern environmental monitoring system designed for data centers and server rooms.
+A modern server monitoring system designed for data centers and server rooms.
 Features real-time temperature and humidity monitoring with simulation capabilities.
 
 SYSTEM REQUIREMENTS:
@@ -16,7 +16,7 @@ HOW TO RUN:
 3. OR run "server-sentinel.exe" directly
 
 FEATURES:
-✓ Real-time environmental monitoring
+✓ Real-time server monitoring
 ✓ Modern GUI with ChatGPT-inspired design
 ✓ Temperature simulation (20-25°C nominal, up to 90-110°C heating)
 ✓ Humidity monitoring and spike simulation

@@ -25,7 +25,7 @@
 
 ## ✨ **Key Features Implemented**
 
-### **Environmental Monitoring**
+### **Server Monitoring**
 - ✅ Real-time temperature monitoring (20-25°C nominal, up to 90-110°C heating)
 - ✅ Humidity monitoring with spike simulation
 - ✅ System state management (Normal/Caution/Danger/Shutdown)
@@ -123,7 +123,7 @@
 
 ## 🎉 **Project Completion Status: SUCCESS**
 
-Server-Sentinel-C is now a fully functional, professionally packaged environmental monitoring system ready for distribution to friends and colleagues. The system provides comprehensive simulation capabilities with an intuitive modern GUI interface.
+Server-Sentinel-C is now a fully functional, professionally packaged server monitoring system ready for distribution to friends and colleagues. The system provides comprehensive simulation capabilities with an intuitive modern GUI interface.
 
 **Created by**: Group 20 - University of Peradeniya
 **Course**: CO253 - Introduction to Programming and Networking for Electrical Engineering 

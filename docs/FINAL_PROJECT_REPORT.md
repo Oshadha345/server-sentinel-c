@@ -12,7 +12,7 @@
 ## 🎯 **Project Objectives**
 
 ### Primary Goals Achieved ✅
-- ✅ **Real-time Environmental Monitoring**: Temperature and humidity tracking
+- ✅ **Real-time Server Monitoring**: Temperature and humidity tracking
 - ✅ **Multiple Simulation Scenarios**: Heating, cooling, humidity spikes, intermittent failures
 - ✅ **Modern GUI Interface**: GTK4-based graphical user interface
 - ✅ **Critical Safety Systems**: Auto-shutdown protection and warning systems
@@ -88,7 +88,7 @@ Server-Sentinel-C/
 
 ## ✨ **Features Implemented**
 
-### **Environmental Monitoring**
+### **Server Monitoring**
 - **Temperature Monitoring**: 20-25°C nominal, up to 90-110°C danger range
 - **Humidity Monitoring**: 45-55% nominal, with spike detection
 - **State Classification**: Normal, Caution, Danger, Shutdown states
@@ -300,7 +300,7 @@ Server-Sentinel-C_v1.0_Windows_Distribution/
 
 ## 🏁 **Conclusion**
 
-Server-Sentinel-C represents a successful implementation of a professional-grade environmental monitoring system. The project demonstrates:
+Server-Sentinel-C represents a successful implementation of a professional-grade server monitoring system. The project demonstrates:
 
 - **Technical Proficiency**: Advanced C programming and GUI development
 - **Software Engineering Excellence**: Modular architecture and professional practices

@@ -49,10 +49,10 @@ cat > dist/Server-Sentinel-C.bat << 'EOF'
 cd /d "%~dp0"
 set PATH=%~dp0;%PATH%
 set XDG_DATA_DIRS=%~dp0share
-echo Starting Server-Sentinel-C Environmental Monitor...
+echo Starting Server-Sentinel-C Server Monitor...
 echo ===================================================
 echo.
-echo Modern GUI Environmental Monitoring System
+echo Modern GUI Server Monitoring System
 echo Features: Real-time monitoring, Simulation controls, Log export
 echo.
 start "" "server-sentinel.exe"
@@ -77,11 +77,11 @@ EOF
 # Create comprehensive README
 echo "Creating documentation..."
 cat > dist/README.txt << 'EOF'
-Server-Sentinel-C Environmental Monitor v1.0
+Server-Sentinel-C Server Monitor v1.0
 ==============================================
 
 DESCRIPTION:
-A modern environmental monitoring system designed for data centers and server rooms.
+A modern server monitoring system designed for data centers and server rooms.
 Features real-time temperature and humidity monitoring with simulation capabilities.
 
 SYSTEM REQUIREMENTS:
@@ -95,7 +95,7 @@ HOW TO RUN:
 3. OR run "server-sentinel.exe" directly
 
 FEATURES:
-✓ Real-time environmental monitoring
+✓ Real-time server monitoring
 ✓ Modern GUI with ChatGPT-inspired design
 ✓ Temperature simulation (20-25°C nominal, up to 90-110°C heating)
 ✓ Humidity monitoring and spike simulation
@@ -203,7 +203,7 @@ Components:
 
 Features in this release:
 ✓ Modern GUI interface
-✓ Real-time environmental monitoring
+✓ Real-time server monitoring
 ✓ Temperature simulation with bounds
 ✓ Humidity monitoring
 ✓ Scenario testing modes

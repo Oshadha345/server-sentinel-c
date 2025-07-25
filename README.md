@@ -16,7 +16,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/Oshadha345/server-sentinel-c?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Oshadha345/server-sentinel-c?style=social)
 
-> 🏆 **PRODUCTION READY** - A professional-grade environmental monitoring system for data centers featuring real-time simulation, modern GUI interface, intelligent safety systems, and comprehensive logging capabilities.
+> 🏆 **PRODUCTION READY** - A professional-grade server monitoring system for data centers featuring real-time simulation, modern GUI interface, intelligent safety systems, and comprehensive logging capabilities.
 
 ---
 
@@ -26,7 +26,7 @@
 
 ### **🎉 Final Release Highlights**
 - ✅ **Complete GUI Application** - Modern GTK4 interface with professional styling
-- ✅ **Environmental Monitoring** - Real-time temperature and humidity simulation
+- ✅ **Server Monitoring** - Real-time temperature and humidity simulation
 - ✅ **Safety Systems** - Critical timer with automatic shutdown protection  
 - ✅ **Multiple Scenarios** - Heating, cooling, humidity spikes, intermittent failures
 - ✅ **Intelligent Controls** - Smart fix button that analyzes and responds appropriately
@@ -96,7 +96,7 @@ make clean && make gui
 - **Color-coded Status**: Visual indicators for system states (Normal/Caution/Danger/Shutdown)
 - **Immediate Feedback**: All controls provide instant visual response
 
-### **🌡️ Environmental Monitoring**
+### **🌡️ Server Monitoring**
 - **Temperature Simulation**: 20-25°C nominal, up to 90-110°C heating scenarios
 - **Humidity Monitoring**: 45-55% nominal with spike detection capabilities
 - **Multi-state System**: Normal → Caution → Danger → Emergency Shutdown progression

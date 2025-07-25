@@ -5,7 +5,7 @@
 #include <string.h>
 
 void show_usage(const char* program_name) {
-    printf("Server-Sentinel-C Environmental Monitoring System\n");
+    printf("Server-Sentinel-C Server Monitoring System\n");
     printf("=================================================\n\n");
     printf("Usage: %s [OPTIONS]\n\n", program_name);
     printf("Options:\n");
@@ -18,7 +18,7 @@ void show_usage(const char* program_name) {
 
 void show_version() {
     printf("Server-Sentinel-C v1.0.0\n");
-    printf("Environmental Monitoring System for Data Centers\n");
+    printf("Server Monitoring System for Data Centers\n");
     printf("Built with C and GTK4\n");
     printf("Copyright (C) 2025 Group 20 - CO253 Project\n");
 }

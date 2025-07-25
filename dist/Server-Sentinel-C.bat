@@ -2,10 +2,10 @@
 cd /d "%~dp0"
 set PATH=%~dp0;%PATH%
 set XDG_DATA_DIRS=%~dp0share
-echo Starting Server-Sentinel-C Environmental Monitor...
+echo Starting Server-Sentinel-C Server Monitor...
 echo ===================================================
 echo.
-echo Modern GUI Environmental Monitoring System
+echo Modern GUI Server Monitoring System
 echo Features: Real-time monitoring, Simulation controls, Log export
 echo.
 start "" "server-sentinel.exe"
