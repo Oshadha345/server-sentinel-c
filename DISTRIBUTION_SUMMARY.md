@@ -2,7 +2,7 @@
 
 ## 📦 **Package Information**
 - **Version**: 1.0.0
-- **Release Date**: July 25, 2025
+- **Release Date**: July 22, 2025
 - **Package Name**: `Server-Sentinel-C_v1.0_Windows_Distribution.tar.gz`
 - **Compressed Size**: 16 MB
 - **Uncompressed Size**: 40 MB
@@ -126,5 +126,5 @@
 Server-Sentinel-C is now a fully functional, professionally packaged environmental monitoring system ready for distribution to friends and colleagues. The system provides comprehensive simulation capabilities with an intuitive modern GUI interface.
 
 **Created by**: Group 20 - University of Peradeniya
-**Course**: CO253  
+**Course**: CO253 - Introduction to Programming and Networking for Electrical Engineering 
 **Date**: July 22, 2025

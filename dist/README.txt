@@ -1,4 +1,4 @@
-Server-Sentinel-C Environmental Monitor v1.0
+Server-Sentinel-C Server Monitor v1.0
 ==============================================
 
 DESCRIPTION:
@@ -56,8 +56,9 @@ TROUBLESHOOTING:
 - For Windows Defender warnings, add the folder to exclusions
 
 ABOUT:
-Created as part of CO253 Software Construction Project
-Group 20 - University of Moratuwa
+Created as part of CO253 Introduction to Programming and Networking for Electrical Engineering 
+
+Group 20 - University of Peradeniya
 Copyright (C) 2025
 
 For support or questions, refer to the project documentation.
