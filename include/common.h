@@ -12,14 +12,14 @@ Defines common macros and utility functions for the project.
 
 
 // temerature  thresholds
-#define TEMP_CAUTION_THRESHOLD 45.0C
-#define TEMP_DANGER_THRESHOLD  60.0C // temperature thresholds in Celsius : this is the main threshold for the system
+#define TEMP_CAUTION_THRESHOLD 45.0f
+#define TEMP_DANGER_THRESHOLD  60.0f // temperature thresholds in Celsius : this is the main threshold for the system
 
 // humidity thresholds
-#define HUMID_LOW_CAUTION      30.0
-#define HUMID_HIGH_CAUTION     70.0
-#define HUMID_LOW_DANGER       20.0
-#define HUMID_HIGH_DANGER      80.0
+#define HUMID_LOW_CAUTION      30.0f
+#define HUMID_HIGH_CAUTION     70.0f
+#define HUMID_LOW_DANGER       20.0f
+#define HUMID_HIGH_DANGER      80.0f
 
 // critical shutdown time in seconds
 #define CRITICAL_SHUTDOWN_SECONDS 600
