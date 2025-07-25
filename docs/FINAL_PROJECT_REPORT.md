@@ -4,7 +4,7 @@
 
 **Project Name**: Server-Sentinel-C Server Monitoring System  
 **Version**: 1.0.0  
-**Course**: CO253  
+**Course**: CO253 - Introduction to Programming and Networking for Electrical Engineering 
 **Institution**: University of Peradeniya  
 **Group**: Group 20  
 **Completion Date**: July 22, 2025  
@@ -318,5 +318,5 @@ The system successfully meets all project requirements while providing a foundat
 
 **Developed by Group 20**  
 **University of Peradeniya**  
-**CO253**  
+**CO253 - Introduction to Programming and Networking for Electrical Engineering**  
 **July 2025**
