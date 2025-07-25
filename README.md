@@ -110,7 +110,7 @@ make clean && make gui
 - **Intermittent Failure**: Cycling environmental issues for resilience testing
 
 ### **🛡️ Safety Systems**
-- **Critical Timer**: 15-second countdown for sustained danger conditions
+- **Critical Timer**: 20-second countdown for sustained danger conditions
 - **Auto-shutdown**: Emergency system shutdown for safety protection
 - **Smart Fix System**: Analyzes conditions and applies appropriate response
 - **Visual Alerts**: Immediate warning systems with color coding
