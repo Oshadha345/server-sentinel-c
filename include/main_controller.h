@@ -47,13 +47,6 @@ typedef struct {
 void initialize_system(Controller* controller);
 
 /**
- * @brief Runs the main application loop.
- * @param controller Pointer to the Controller instance.
- * @return Exit code (0 for normal exit, 1 for error).
- */
-int run_main_loop(Controller* controller);
-
-/**
  * @brief Processes a user command and updates the system accordingly.
  * @param controller Pointer to the Controller instance.
  * @param command The user command to process.
@@ -72,23 +65,5 @@ void update_system_state(Controller* controller, SensorReading reading);
  * @param controller Pointer to the Controller instance.
  */
 void shutdown_system(Controller* controller);
-
-/**
- * @brief Parses raw input string into a UserCommand.
- * @param input Raw input string from user.
- * @return UserCommand structure with parsed command type.
- */
-UserCommand parse_user_input(const char* input);
-
-/**
- * @brief Displays current system status and alerts.
- * @param controller Pointer to the Controller instance.
- */
-void display_system_status(const Controller* controller);
-
-/**
- * @brief Displays help information for available commands.
- */
-void display_help();
 
 #endif // MAIN_CONTROLLER_H

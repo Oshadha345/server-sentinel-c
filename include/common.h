@@ -22,7 +22,7 @@ Defines common macros and utility functions for the project.
 #define HUMID_HIGH_DANGER      80.0f
 
 // critical shutdown time in seconds
-#define CRITICAL_SHUTDOWN_SECONDS 600
+#define CRITICAL_SHUTDOWN_SECONDS 20
 
 // log list size
 #define LOG_SIZE 120

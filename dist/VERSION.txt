@@ -1,0 +1,31 @@
+Server-Sentinel-C Version Information
+====================================
+
+Version: 1.0.0
+Build Date: 2025-07-25
+Build Type: GUI-Only Release
+
+Components:
+- Core Engine: C99 Standard
+- GUI Framework: GTK4
+- Platform: Windows (MINGW64)
+- Architecture: x64
+
+Features in this release:
+✓ Modern GUI interface
+✓ Real-time environmental monitoring
+✓ Temperature simulation with bounds
+✓ Humidity monitoring
+✓ Scenario testing modes
+✓ Log export functionality
+✓ Critical timer system
+✓ Auto-shutdown protection
+
+Dependencies included:
+- GTK4 runtime libraries
+- GLib/GObject libraries
+- Cairo graphics libraries
+- Pango text rendering
+- All required DLLs
+
+This is a complete, self-contained distribution.

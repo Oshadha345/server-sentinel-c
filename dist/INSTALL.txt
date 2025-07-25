@@ -1,0 +1,38 @@
+Server-Sentinel-C Installation Instructions
+===========================================
+
+QUICK START:
+1. Extract all files to a folder on your computer
+2. Double-click "Server-Sentinel-C.bat"
+3. The application will start automatically
+
+DETAILED SETUP:
+1. Choose a permanent location for the application
+   (e.g., C:\Program Files\Server-Sentinel-C)
+
+2. Extract/copy all files from this package to that location
+
+3. Ensure the following files are present:
+   - server-sentinel.exe (main application)
+   - Server-Sentinel-C.bat (launcher)
+   - run-direct.bat (alternative launcher)
+   - All .dll files (GTK dependencies)
+   - share/ folder (GTK data files)
+   - README.txt (this documentation)
+
+4. Optional: Create a desktop shortcut
+   - Right-click "Server-Sentinel-C.bat"
+   - Select "Create shortcut"
+   - Move shortcut to desktop
+   - Rename as desired
+
+SHARING WITH OTHERS:
+- Zip this entire folder to share
+- Recipients just need to extract and run
+- No additional installation required
+- Works on any Windows computer
+
+UNINSTALLATION:
+- Simply delete the application folder
+- No registry entries or system files modified
+- Completely portable application
