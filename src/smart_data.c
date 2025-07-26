@@ -2,42 +2,51 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Private function to apply small random fluctuations for STABLE state
+//------------ HELPER FUNCTIONS SECTION ------------
+// This function adds tiny random changes to make readings look realistic
+// Like how real sensors have small variations even when stable
 static float add_fluctuation(float value, float max_fluctuation) {
     float fluctuation = ((float)rand() / (float)RAND_MAX) * max_fluctuation * 2.0f - max_fluctuation;
     return value + fluctuation;
 }
 
-// Initializes the data generator to a stable state.
+//------------ GENERATOR INITIALIZATION ------------
+// Sets up our fake data generator when program starts - like calibrating sensors
 void init_generator(SmartDataGenerator* generator) {
     if (!generator) return;
 
-    srand(time(NULL)); // Seed the random number generator
-    generator->current_temp = 22.5f;  // Start in nominal range
-    generator->current_humidity = 50.0f;
+    srand(time(NULL)); // Seed the random number generator (makes numbers more random)
+    generator->current_temp = 22.5f;  // Start in nominal range (perfect room temperature!)
+    generator->current_humidity = 50.0f; // Start with nice humidity level
     generator->stable_cycles = 0;
     set_generator_state(generator, STABLE);
 }
 
-// Sets the data generator to a new simulation state.
+//------------ STATE CHANGING FUNCTION ------------
+// This changes what kind of simulation we want - heating, cooling, etc.
 void set_generator_state(SmartDataGenerator* generator, MockDataState new_state) {
     if (!generator) return;
 
     generator->state = new_state;
-    generator->stable_cycles = 0; // Reset cycle count on state change
+    generator->stable_cycles = 0; // Reset cycle count on state change (start fresh)
 
+    //------------ SETTING UP DIFFERENT SCENARIOS ------------
+    // Each scenario has different rates of change - like turning knobs on the system
     switch (new_state) {
         case STABLE:
+            // Everything stays nice and normal - boring but safe!
             generator->temp_drift = 0.1f;
             generator->humidity_drift = 0.1f;
             break;
         case HEATING_UP:
+            // Oh no! Air conditioning broke - things getting hot fast!
             generator->temp_drift = 2.0f;
             generator->humidity_drift = -0.5f;
             break;
         case COOLING_DOWN:
+            // Phew! Fixed the cooling - temperature going down nicely
             generator->temp_drift = -2.0f;  // Cool down at same rate as heating up
-            generator->humidity_drift = 0.5f;  // Humidity normalizes
+            generator->humidity_drift = 0.5f;  // Humidity normalizes too
             break;
         case HUMIDITY_SPIKE:
             generator->temp_drift = 0.0f;
