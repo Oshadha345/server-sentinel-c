@@ -4,7 +4,7 @@
 - **Project Name**: Server-Sentinel-C Server Monitoring System
 - **Version**: 1.0.0
 - **Team**: Group 20
-- **Course**: CO253 - Software Construction Project
+- **Course**: CO253 - Introduction to Programming and Networking for Electrical Engineering
 - **Date**: July 2025
 
 ## Testing Overview
@@ -163,7 +163,7 @@ This test plan outlines all the inputs we tested and what we expected to happen.
 **Purpose**: Test system recovery from shutdown state
 
 **Input**: 
-- After system shutdown, click "▶ Start Simulation" again
+- After system shutdown, click Exit to reboot again, which shows real world system start-up
 
 **Expected Output**:
 - System resets to initial normal state
@@ -388,7 +388,7 @@ This test plan outlines all the inputs we tested and what we expected to happen.
 **Hardware**:
 - Intel Core i5 processor
 - 8 GB RAM
-- Windows 10 64-bit
+- Windows 11 64-bit
 
 **Software**:
 - MINGW64 build environment
@@ -414,6 +414,6 @@ The application is ready for production deployment and meets all specified requi
 ---
 
 **Test Plan Document**  
-**Prepared by**: Group 20 Testing Team  
+**Prepared by**: Group 20 Testing Team (Rumal Rathnasiri)  
 **Date**: July 26, 2025  
 **Status**: ✅ ALL TESTS PASSED

@@ -198,6 +198,6 @@ For technical questions or issues:
 ---
 
 **Server-Sentinel-C v1.0.0** - Professional Server Monitoring System  
-**Developed by**: Group 20, University of Moratuwa  
-**Course**: CO253 - Software Construction Project  
+**Developed by**: Group 20, University of Peradeniya 
+**Course**: CO253 - Introduction to Programming and Networking for Electrical Engineering
 **Date**: July 2025

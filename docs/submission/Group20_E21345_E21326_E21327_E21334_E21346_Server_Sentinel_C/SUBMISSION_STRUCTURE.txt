@@ -19,20 +19,29 @@ This submission package contains:
    ├── logger.h                  - Logging interfaces
    └── system_logic.h            - Logic interfaces
 
+📁 samples/                         - Outputs logs 
+   ├── Log_2025-07-26_0733PM_0733PM
+   └── Log_2025-07-25_0857PM_0857PM
+
 📁 test/                         - Test files demonstrating functionality
    ├── test_fix_button.c         - Fix button functionality tests
    ├── test_heating_button.c     - Heating scenario tests
    └── [other test files]        - Additional validation tests
 
 📁 docs/                         - Additional documentation
+   ├── COMPLETE_USER_GUIDE.md    - Detailed user manual
    ├── FINAL_PROJECT_REPORT.md   - Comprehensive technical report
-   └── COMPLETE_USER_GUIDE.md    - Detailed user manual
+   ├── GROUP_TASK_BREAKDOWN.md   - Team member contributions
+   └── TEST_PLAN.md              - Detailed testing documentation
+  
 
-📄 README.md                     - Main project description and usage
-📄 TEST_PLAN.md                  - Detailed testing documentation
-📄 GROUP_TASK_BREAKDOWN.md       - Team member contributions
 📄 Makefile                      - Build system configuration
 📄 PROJECT_STRUCTURE.txt         - This file
+📄 README.md                     - Main project description and usage
+📄 Server-Sentinel-C_v1.0_Windows_Distribution.tar.gz     - Windows distribution package
+
+-----------------------------------------------------------------------------
+
 
 Key Features Implemented:
 ✓ Real-time server monitoring system
@@ -49,5 +58,5 @@ How to Build and Run:
 
 For detailed instructions, see README.md and COMPLETE_USER_GUIDE.md
 
-Group 20 - CO253 Software Construction Project
-University of Moratuwa - July 2025
+Group 20 - CO253 Introduction to Programming and Networking for Electrical Engineering
+University of Peradeniya - July 2025
