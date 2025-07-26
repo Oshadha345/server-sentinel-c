@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 
-// Forward declarations for callback functions
+// Forward declarations for callback function
 static void on_stable_clicked(GtkWidget *widget, gpointer user_data);
 static void on_heating_clicked(GtkWidget *widget, gpointer user_data);
 static void on_humidity_spike_clicked(GtkWidget *widget, gpointer user_data);
