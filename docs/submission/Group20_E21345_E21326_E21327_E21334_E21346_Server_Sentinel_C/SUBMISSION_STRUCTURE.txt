@@ -19,9 +19,12 @@ This submission package contains:
    ├── logger.h                  - Logging interfaces
    └── system_logic.h            - Logic interfaces
 
-📁 samples/                         - Outputs logs 
+📁 samples/                      - Outputs logs 
    ├── Log_2025-07-26_0733PM_0733PM
    └── Log_2025-07-25_0857PM_0857PM
+
+📁 project demonstration/        - demonstration video of project
+   └── Server Sentinal.mp4       
 
 📁 test/                         - Test files demonstrating functionality
    ├── test_fix_button.c         - Fix button functionality tests
