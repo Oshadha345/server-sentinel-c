@@ -28,10 +28,9 @@ This submission package contains:
    ├── test_heating_button.c     - Heating scenario tests
    └── [other test files]        - Additional validation tests
 
-📁 zip/                         - Test files demonstrating functionality
-   ├── test_fix_button.c         - Fix button functionality tests
-   ├── test_heating_button.c     - Heating scenario tests
-   └── [other test files]        - Additional validation tests
+📁 zip/                          - Distribution package and summary
+   ├── DISTRIBUTION_SUMMARY.md   - Summary of the distribution package
+   └── Server-Sentinel-C_v1.0_Windows_Distribution.tar.gz - Windows distribution package
 
 📁 docs/                         - Additional documentation
    ├── COMPLETE_USER_GUIDE.md    - Detailed user manual
