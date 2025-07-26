@@ -50,7 +50,7 @@ Our Server-Sentinel-C system monitors server room conditions just like a securit
 
 ## Usage Instructions
 
-### Installation & Setup
+### a.) Installation & Setup
 
 1. **Download the Package**
    - Get `Server-Sentinel-C_v1.0_Windows_Distribution.tar.gz` (16 MB)
@@ -67,7 +67,7 @@ Our Server-Sentinel-C system monitors server room conditions just like a securit
    - Double-click `Server-Sentinel-C.bat`
    - The application window will open automatically
 
-### Using the Interface
+### b.) Using the Interface
 
 #### Getting Started
 1. **Start Monitoring**: Click the "▶ Start Simulation" button
@@ -75,80 +75,93 @@ Our Server-Sentinel-C system monitors server room conditions just like a securit
 3. **Check Status**: Monitor the system state (Normal/Caution/Danger)
 
 #### Testing Different Scenarios
-
-**Normal Operation:**
+---
+---
+**👉Normal Operation:**
 - Click "🔄 Stable" to maintain normal conditions
 - Temperature stays around 22-25°C
 - Humidity stays around 45-55%
-
-**Heating Test:**
+---
+**👉Heating Test:**
 - Click "🔥 Heating Up" to simulate cooling failure
 - Watch temperature rise gradually to 90-110°C
 - System enters Caution (45°C+) then Danger (60°C+)
-
-**Cooling Recovery:**
+---
+**👉Cooling Recovery:**
 - During heating, click "🔧 Fix" to start cooling
 - Temperature decreases at 2°C per second
 - System automatically stabilizes at normal range
-
-**Humidity Problems:**
+---
+**👉Humidity Problems:**
 - Click "💧 Humidity Spike" to test humidity control
 - Humidity jumps outside normal range
 - System alerts when humidity is too high/low
-
-**Intermittent Issues:**
+---
+**👉Intermittent Issues:**
 - Click "⚡ Intermittent Failure" for random problems
 - System cycles between different issues
 - Use "🔧 Fix" to resolve problems
+---
+
+
 
 #### Reading the Display
-
-**Temperature Display:**
+---
+---
+**👉Temperature Display:**
 - Green: Normal (20-45°C)
 - Yellow: Caution (45-60°C)  
 - Red: Danger (60°C+)
-
-**Humidity Display:**
+---
+**👉Humidity Display:**
 - Green: Normal (30-70%)
 - Yellow: Caution (20-30% or 70-80%)
 - Red: Danger (below 20% or above 80%)
-
-**System State:**
+---
+**👉System State:**
 - **NORMAL**: Everything is working fine
 - **CAUTION**: Some readings outside normal range
 - **DANGER**: Critical conditions detected
 - **SHUTDOWN**: Emergency shutdown activated
+---
 
 #### Log Management
-
-**Viewing Logs:**
+---
+---
+**👉Viewing Logs:**
 - Live log display shows latest 20 entries
 - Each entry shows timestamp, temperature, humidity, and status
 - Newest entries appear at the top
-
-**Exporting Logs:**
+---
+**👉Exporting Logs:**
 - Click "📥 Export Log" to save current data
 - Files saved with timestamp names like "log_20250726_140530_to_140630.txt"
 - Contains all 120 entries from circular buffer
 
-### Troubleshooting
 
-**Application Won't Start:**
+---
+
+### c.) Troubleshooting
+---
+
+**👉Application Won't Start:**
 - Make sure you extracted all files from the .tar.gz package
 - Try running `run-direct.bat` to see error messages
 - Check that you're on Windows 7 or later
 
-**No Temperature Changes:**
+**👉No Temperature Changes:**
 - Click "▶ Start Simulation" to begin monitoring
 - Make sure you've selected a scenario (Stable, Heating, etc.)
 
-**Fix Button Not Working:**
+**👉Fix Button Not Working:**
 - Only works during Heating Up or Intermittent Failure states
 - Make sure system is actually in a problem state first
 
-**Interface Looks Strange:**
+**👉Interface Looks Strange:**
 - Close and restart the application
 - Make sure all DLL files are in the same folder
+
+---
 
 ### System Requirements
 
@@ -156,6 +169,8 @@ Our Server-Sentinel-C system monitors server room conditions just like a securit
 - **Memory**: Minimum 64 MB available RAM
 - **Storage**: 50 MB free disk space
 - **Additional Software**: None required (completely portable)
+
+---
 
 ### File Structure
 
@@ -171,9 +186,11 @@ Server-Sentinel-C_Distribution/
 └── VERSION.txt                 # Version information
 ```
 
+---
+
 ### Advanced Usage
 
-**Command Line Options:**
+**👉Command Line Options:**
 ```bash
 # Show help information
 server-sentinel.exe --help
@@ -182,11 +199,13 @@ server-sentinel.exe --help
 server-sentinel.exe --version
 ```
 
-**Log File Format:**
+**👉Log File Format:**
 ```
 Timestamp: 2025-07-26 14:05:30
 Temperature: 23.4°C, Humidity: 48.2%, State: NORMAL
 ```
+
+---
 
 ### Support
 
@@ -197,7 +216,11 @@ For technical questions or issues:
 
 ---
 
-**Server-Sentinel-C v1.0.0** - Professional Server Monitoring System  
-**Developed by**: Group 20, University of Moratuwa  
-**Course**: CO253 - Software Construction Project  
-**Date**: July 2025
+
+## Project Information
+
+- **Project**: Server-Sentinel-C v1.0.0
+- **GitHub**: <https://github.com/Oshadha345/server-sentinel-c>
+- **Developers**: Group 20, University of Peradeniya
+- **Course**: CO253 - Introduction to Programming and Networking for Electrical Engineering
+- **Date**: July 2025
