@@ -1,0 +1,53 @@
+Server-Sentinel-C Final Submission Structure
+===========================================
+
+This submission package contains:
+
+📁 src/                          - All C source code files
+   ├── main.c                    - Application entry point
+   ├── main_controller.c         - Core business logic
+   ├── gui_interface.c           - GTK4 user interface
+   ├── smart_data.c              - Environmental simulation
+   ├── logger.c                  - Data logging system
+   └── system_logic.c            - Safety and state logic
+
+📁 include/                      - All header files
+   ├── common.h                  - Shared definitions
+   ├── main_controller.h         - Controller interfaces
+   ├── gui_interface.h           - GUI declarations
+   ├── smart_data.h              - Simulation interfaces
+   ├── logger.h                  - Logging interfaces
+   └── system_logic.h            - Logic interfaces
+
+📁 test/                         - Test files demonstrating functionality
+   ├── test_fix_button.c         - Fix button functionality tests
+   ├── test_heating_button.c     - Heating scenario tests
+   └── [other test files]        - Additional validation tests
+
+📁 docs/                         - Additional documentation
+   ├── FINAL_PROJECT_REPORT.md   - Comprehensive technical report
+   └── COMPLETE_USER_GUIDE.md    - Detailed user manual
+
+📄 README.md                     - Main project description and usage
+📄 TEST_PLAN.md                  - Detailed testing documentation
+📄 GROUP_TASK_BREAKDOWN.md       - Team member contributions
+📄 Makefile                      - Build system configuration
+📄 PROJECT_STRUCTURE.txt         - This file
+
+Key Features Implemented:
+✓ Real-time server monitoring system
+✓ Modern GTK4 graphical interface
+✓ Multiple simulation scenarios (heating, cooling, humidity)
+✓ Intelligent safety systems with emergency shutdown
+✓ Comprehensive data logging with export functionality
+✓ Professional Windows distribution package
+
+How to Build and Run:
+1. Ensure GTK4 development libraries are installed
+2. Run: make clean && make
+3. Execute: ./bin/server-sentinel.exe
+
+For detailed instructions, see README.md and COMPLETE_USER_GUIDE.md
+
+Group 20 - CO253 Software Construction Project
+University of Moratuwa - July 2025
