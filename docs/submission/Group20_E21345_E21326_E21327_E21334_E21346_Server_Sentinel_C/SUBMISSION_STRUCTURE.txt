@@ -33,16 +33,13 @@ This submission package contains:
    └── Server-Sentinel-C_v1.0_Windows_Distribution.tar.gz - Windows distribution package
 
 📁 docs/                         - Additional documentation
-   ├── COMPLETE_USER_GUIDE.md    - Detailed user manual
    ├── FINAL_PROJECT_REPORT.md   - Comprehensive technical report
    ├── GROUP_TASK_BREAKDOWN.md   - Team member contributions
    └── TEST_PLAN.md              - Detailed testing documentation
   
-
-📄 Makefile                      - Build system configuration
 📄 PROJECT_STRUCTURE.txt         - This file
-📄 README.md                     - Main project description and usage
-📄 Server-Sentinel-C_v1.0_Windows_Distribution.tar.gz     - Windows distribution package
+📄 README.md                     - Main project description and User Manual
+
 
 -----------------------------------------------------------------------------
 
@@ -60,7 +57,7 @@ How to Build and Run:
 2. Run: make clean && make
 3. Execute: ./bin/server-sentinel.exe
 
-For detailed instructions, see README.md and COMPLETE_USER_GUIDE.md
+For detailed instructions, see README.md
 
 Group 20 - CO253 Introduction to Programming and Networking for Electrical Engineering
 University of Peradeniya - July 2025
