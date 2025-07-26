@@ -28,6 +28,11 @@ This submission package contains:
    ├── test_heating_button.c     - Heating scenario tests
    └── [other test files]        - Additional validation tests
 
+📁 zip/                         - Test files demonstrating functionality
+   ├── test_fix_button.c         - Fix button functionality tests
+   ├── test_heating_button.c     - Heating scenario tests
+   └── [other test files]        - Additional validation tests
+
 📁 docs/                         - Additional documentation
    ├── COMPLETE_USER_GUIDE.md    - Detailed user manual
    ├── FINAL_PROJECT_REPORT.md   - Comprehensive technical report

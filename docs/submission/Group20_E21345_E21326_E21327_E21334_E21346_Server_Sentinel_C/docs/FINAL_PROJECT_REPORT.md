@@ -45,7 +45,7 @@
 ### **Distribution Package**
 - **Package Size**: 16 MB (compressed) / 40 MB (uncompressed)
 - **Dependencies**: 46 DLL libraries included
-- **Compatibility**: Windows 7+ (64-bit recommended)
+- **Compatibility**: Windows 7 or higher+ (64-bit recommended)
 - **Installation**: Zero-installation portable application
 
 ## 🏗️ **System Architecture**
